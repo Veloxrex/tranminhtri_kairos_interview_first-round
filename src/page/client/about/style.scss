@@ -1,0 +1,30 @@
+.about-page-container{
+  display: flex;
+  flex-wrap: nowrap;
+  min-width: 1200px;
+  .about-detail-container{
+    width: calc(100% / 3);
+    background: #F3F9FF;
+    border: 1px solid rgba(153, 153, 153, 0.46);
+    .title {
+      color: #181949;
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .address,.tax-id,.contact,.copyright {
+      font-size: 14px;
+      font-weight: 400;
+      color: #666666;
+      margin-bottom: 16px;
+    }
+    padding: 20px;
+    &:nth-child(1){
+      padding-left: 160px;
+      border-right: none;
+    }
+    &:nth-child(2),  &:nth-child(3){
+      border-right: none;
+    }
+  }
+}
